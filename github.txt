@@ -1,6 +1,6 @@
-git init
-cc
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/ackermanakerman223-art/before-after.git
-git push -u origin main
+ git init
+ git add .
+  git commit -m "before after uchun papka " 
+  git branch -M main
+   git remote add origin https://github.com/ackermanakerman223-art/before-after.git
+    git push -u origin main

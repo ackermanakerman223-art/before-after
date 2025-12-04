@@ -1,1 +1,45 @@
- 
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card {
+  position: relative;
+  width: max-content;
+}
+.card::after {
+  content: "salom dostlar";
+
+  position: absolute;
+  left: 100%;
+  top: 50%;
+
+  width: 600px;
+  padding: 30px;
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: orange;
+  opacity: 0;
+
+  transition: 0.4s ease all;
+}
+.card::before {
+  font-family: "FontAwesome";
+  content: "\f04b";
+
+  position: absolute;
+  font-size: 20px;
+  left: 295px;
+  top: 163px;
+
+  color: orange;
+
+  transform: rotate(65px);
+  opacity: 0;
+  transition: 0.4s ease all;
+}
+.card:hover::after,
+.card::before {
+  opacity: 1;
+}
